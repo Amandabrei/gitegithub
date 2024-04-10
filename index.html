@@ -7,8 +7,72 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Testando Git</title>
 
-</head>
-<body>
-    <h1>Olá Git</h1>
-</body>
+    <body>
+        <header>
+            <h1>Testando Git</h1>
+        </header>
+    
+        <section class="hero">
+            <div class="box-img">
+                <img class="responsiva" id="troca" src="img/img1.webp">
+            </div>
+            <div class="box-text">
+                <span>Tirando dúvidas sobre Git!!</span>
+                <h2>Colocando, <br>projetos no git</h2>
+                <p>
+                    Primeiro: faça uma pasta no computador com o nome do projeto, depois araste ela para o VSC.<br>
+            </div>
+        </section>
+    
+        <section class="especialidades">
+            <div class="box-item">
+                <h3>Primeiro Passo</h3>
+                <p>dentro do VSC crie uma index.html ou coloque o nome que quiser, digite ! e de um enter para completar o código, coloque pt-br, e faça as alterações para começar o projeto.
+                    . para colocar seu nome digite: meta name="author" content="Amanda Bastos">
+                    . para trabalhar com Css digite: link rel="stylesheet" href="caminho do css"></p>
+            </div>
+            <div class="box-item">
+                <h3>Segundo Passo</h3>
+                <p>Para iniciar o git, após começar o projeto clique em Viwe - Terminal
+                    .digite: git init (para inicializar o repositório no git)
+                    .para ver o status digite: git status (veremos que no inicio ele não tem commits yet(agora))
+                    .para começar a trabalhar no Git digite: git add index.html
+                    .após isso veremos q ele esta preparado para ser committed, ele foi adicionado
+                    .para criar a primeira versao digite: git commit -m "inicializamos o projeto" 
+                    .a primeira vez tem que cadastrar o email e usuario, basta copiar a linha do email e colar colocando seu email - faça o mesmo no user
+                    .dai já pode novamente criar a primeira versao digitando: git commit -m "inicializamos o projeto"
+                    .para logar o projeto digite: git log (vai mostrar tudo sobre o projeto)</p>
+            </div>
+            <div class="box-item">
+                <h3>Terceiro Passo</h3>
+                <p>Quando você cria novas pastas, como css, voce tem que dar comando curinga para add tudo que foi alterado, para isso digite: git add .
+                O bom é ir criando legendas a cada motificação, git commit -m "adicionei css"</p>
+            </div>
+    
+            <a href="#" class="m-top btn-hero">Parabéns!</a>
+         </section>
+    
+         <footer>
+            <p>2024 © Breidenbach Sites. Todos os direitos reservados.</p>
+         </footer>
+    
+         <div class="whats">
+            <a target="_blank" href="#">
+            <img width="50px" src="img/whats.png">
+    
+         </div>
+    
+         <script>
+            const troca = document.getElementById('troca');
+            //quando o mouse passar por cima da imagem
+            troca.addEventListener('mouseover', function () {
+                troca.src = "img/img2.webp";
+            });
+    
+            //quando o mouse sair de cima da imagem
+            troca.addEventListener('mouseout', function () {
+                troca.src = "img/img1.webp";
+            });
+         </script>
+    
 </html>
